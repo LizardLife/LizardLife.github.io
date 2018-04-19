@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="Mac系统升级到High Sierra（10.13.4）之后Cocoapods报错12$ pod setupzsh: /usr/local/bin/pod: bad interpreter: /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/bin: no such file or directory 原因： 旧的系统自带的是Ru">
+<meta name="description" content="教程地址换行在需要换行的地方加\连续敲两个换行 或者在前一行的末尾加至少两个空格再敲换行 标题# H1##  H2### H3#### H4##### H5######H6">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Mac系统升级High Sierra导致Cocoapods不可用">
-<meta property="og:url" content="http://yoursite.com/2018/04/15/Cocoapods-bug/index.html">
+<meta property="og:title" content="关于MacDown的一些用法">
+<meta property="og:url" content="http://yoursite.com/2018/04/16/macdown-grammar/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Mac系统升级到High Sierra（10.13.4）之后Cocoapods报错12$ pod setupzsh: /usr/local/bin/pod: bad interpreter: /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/bin: no such file or directory 原因： 旧的系统自带的是Ru">
+<meta property="og:description" content="教程地址换行在需要换行的地方加\连续敲两个换行 或者在前一行的末尾加至少两个空格再敲换行 标题# H1##  H2### H3#### H4##### H5######H6">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-16T12:57:38.422Z">
+<meta property="og:updated_time" content="2018-04-17T12:40:33.257Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Mac系统升级High Sierra导致Cocoapods不可用">
-<meta name="twitter:description" content="Mac系统升级到High Sierra（10.13.4）之后Cocoapods报错12$ pod setupzsh: /usr/local/bin/pod: bad interpreter: /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/bin: no such file or directory 原因： 旧的系统自带的是Ru">
+<meta name="twitter:title" content="关于MacDown的一些用法">
+<meta name="twitter:description" content="教程地址换行在需要换行的地方加\连续敲两个换行 或者在前一行的末尾加至少两个空格再敲换行 标题# H1##  H2### H3#### H4##### H5######H6">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/04/15/Cocoapods-bug/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/04/16/macdown-grammar/"/>
 
 
 
 
 
-  <title>Mac系统升级High Sierra导致Cocoapods不可用 | Hexo</title>
+  <title>关于MacDown的一些用法 | Hexo</title>
   
 
 
@@ -276,7 +276,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/15/Cocoapods-bug/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/16/macdown-grammar/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="John Doe">
@@ -293,7 +293,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Mac系统升级High Sierra导致Cocoapods不可用</h1>
+          <h1 class="post-title" itemprop="name headline">关于MacDown的一些用法</h1>
         
 
         <div class="post-meta">
@@ -305,8 +305,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-15T16:17:52+08:00">
-                2018-04-15
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-16T20:59:59+08:00">
+                2018-04-16
               </time>
             
 
@@ -343,29 +343,9 @@
       
 
       
-        <h3 id="Mac系统升级到High-Sierra（10-13-4）之后Cocoapods报错"><a href="#Mac系统升级到High-Sierra（10-13-4）之后Cocoapods报错" class="headerlink" title="Mac系统升级到High Sierra（10.13.4）之后Cocoapods报错"></a>Mac系统升级到High Sierra（10.13.4）之后Cocoapods报错</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ pod setup</span><br><span class="line">zsh: /usr/local/bin/pod: bad interpreter: /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/bin: no such file or directory</span><br></pre></td></tr></table></figure>
-<p>原因：</p>
-<p>旧的系统自带的是Ruby2.0，High Sierra的Ruby是2.3的，因此执行pod命令时会找不到Ruby解释器。</p>
-<p>解决：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo gem install cocoapods</span><br></pre></td></tr></table></figure>
-<p>然后</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ pod setup</span><br></pre></td></tr></table></figure>
-<p>更新本地Cocoapods库</p>
-<p>此时执行pod install 命令时，又报错：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Re-creating CocoaPods due to major version update.</span><br><span class="line">Analyzing dependencies</span><br><span class="line">[!] The dependency `SVProgressHUD` is not used in any concrete target.</span><br><span class="line">The dependency `MJRefresh` is not used in any concrete target.</span><br><span class="line">The dependency `SDWebImage ` is not used in any concrete target.</span><br></pre></td></tr></table></figure>
-<p>原因：<br>Cocoapods升级到最新版本之后，podfile格式需要变化。</p>
-<p>解决：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">platform:ios, &apos;8.0&apos;</span><br><span class="line">pod &apos;SVProgressHUD&apos;, &apos;~&gt; 2.0.3&apos;</span><br><span class="line">pod &apos;MJRefresh&apos;, &apos;~&gt; 3.1.0&apos;</span><br><span class="line">pod &apos;SDWebImage&apos;, &apos;~&gt; 3.7.6&apos;</span><br></pre></td></tr></table></figure>
-<p>改为：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">platform:ios, &apos;8.0&apos;</span><br><span class="line"></span><br><span class="line">target ‘当前工程名’ do</span><br><span class="line"></span><br><span class="line">pod &apos;SVProgressHUD&apos;, &apos;~&gt; 2.0.3&apos;</span><br><span class="line">pod &apos;MJRefresh&apos;, &apos;~&gt; 3.1.0&apos;</span><br><span class="line">pod &apos;SDWebImage&apos;, &apos;~&gt; 3.7.6&apos;</span><br><span class="line"></span><br><span class="line">end</span><br></pre></td></tr></table></figure>
-<p>即添加</p>
-<p>target ‘当前工程名’ do  </p>
-<p>并在结尾加上  </p>
-<p>end</p>
-<p>当你下载了个一个网上的开源项目，pod install 时，会长时间无反应，这是因为执行这条命令时，本地Cocoapods会先更新本地库。所以应该改为：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pod install --verbose --no-repo-update</span><br></pre></td></tr></table></figure>
-<h4 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h4><p><a href="https://tomisacat.xyz/tech/2017/09/26/macos-high-sierra-with-cocoapods.html" target="_blank" rel="noopener">升级 macOS High Sierra 后与 Cocoapods 的兼容问题</a></p>
-
+        <h3 id="教程地址"><a href="#教程地址" class="headerlink" title="教程地址"></a><a href="http://xianbai.me/learn-md/" target="_blank" rel="noopener">教程地址</a></h3><h4 id="换行"><a href="#换行" class="headerlink" title="换行"></a>换行<br></h4><p>在需要换行的地方加\<br><br><br>连续敲两个换行</p>
+<p>或者在前一行的末尾加至少两个空格<br>再敲换行</p>
+<h4 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h4><h1 id="H1"><a href="#H1" class="headerlink" title="# H1"></a># H1</h1><h2 id="H2"><a href="#H2" class="headerlink" title="##  H2"></a>##  H2</h2><h3 id="H3"><a href="#H3" class="headerlink" title="### H3"></a>### H3</h3><h4 id="H4"><a href="#H4" class="headerlink" title="#### H4"></a>#### H4</h4><h5 id="H5"><a href="#H5" class="headerlink" title="##### H5"></a>##### H5</h5><h6 id="H6"><a href="#H6" class="headerlink" title="######H6"></a>######H6</h6>
       
     </div>
     
@@ -389,8 +369,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/04/13/test-blog/" rel="next" title="Mac上搭建Hexo+github博客 以及主题配置">
-                <i class="fa fa-chevron-left"></i> Mac上搭建Hexo+github博客 以及主题配置
+              <a href="/2018/04/15/Cocoapods-bug/" rel="next" title="Mac系统升级High Sierra导致Cocoapods不可用">
+                <i class="fa fa-chevron-left"></i> Mac系统升级High Sierra导致Cocoapods不可用
               </a>
             
           </div>
@@ -399,8 +379,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/04/16/macdown-grammar/" rel="prev" title="关于MacDown的一些用法">
-                关于MacDown的一些用法 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/04/19/Mac-command/" rel="prev" title="Mac上打开破解版应用显示已损坏 + Mac上打开NTFS功能">
+                Mac上打开破解版应用显示已损坏 + Mac上打开NTFS功能 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -515,7 +495,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Mac系统升级到High-Sierra（10-13-4）之后Cocoapods报错"><span class="nav-number">1.</span> <span class="nav-text">Mac系统升级到High Sierra（10.13.4）之后Cocoapods报错</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#参考"><span class="nav-number">1.1.</span> <span class="nav-text">参考</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#教程地址"><span class="nav-number">1.</span> <span class="nav-text">教程地址</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#换行"><span class="nav-number">1.1.</span> <span class="nav-text">换行</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#标题"><span class="nav-number">1.2.</span> <span class="nav-text">标题</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#H1"><span class="nav-number"></span> <span class="nav-text"># H1</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#H2"><span class="nav-number"></span> <span class="nav-text">##  H2</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#H3"><span class="nav-number">1.</span> <span class="nav-text">### H3</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#H4"><span class="nav-number">1.1.</span> <span class="nav-text">#### H4</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#H5"><span class="nav-number">1.1.1.</span> <span class="nav-text">##### H5</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#H6"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">######H6</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
 
           </div>
