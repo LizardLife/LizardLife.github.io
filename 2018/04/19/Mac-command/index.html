@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="疑难杂症," />
 
 
 
@@ -79,18 +79,19 @@
 
 
 
-<meta name="description" content="Mac上打开App显示文件已损坏，应该移除到废纸篓。此问题多见于一些破解应用 解决：1$ sudo spctl --master-disable 然后重新打开应用即可 Mac打开原生NTFS功能1$ diskutil list 1$ sudo vim /etc/fstab 编辑 1LABEL=Win\040Ntfs\040Drive none ntfs rw,auto,nobrowse Win\0">
+<meta name="description" content="Mac上打开App显示文件已损坏，应该移除到废纸篓。此问题多见于一些破解应用">
+<meta name="keywords" content="疑难杂症">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Mac上打开破解版应用显示已损坏 + Mac上打开NTFS功能">
 <meta property="og:url" content="http://yoursite.com/2018/04/19/Mac-command/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Mac上打开App显示文件已损坏，应该移除到废纸篓。此问题多见于一些破解应用 解决：1$ sudo spctl --master-disable 然后重新打开应用即可 Mac打开原生NTFS功能1$ diskutil list 1$ sudo vim /etc/fstab 编辑 1LABEL=Win\040Ntfs\040Drive none ntfs rw,auto,nobrowse Win\0">
+<meta property="og:description" content="Mac上打开App显示文件已损坏，应该移除到废纸篓。此问题多见于一些破解应用">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://img.blog.csdn.net/20161228101320061?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2FuZ2p1bmxpbmc4ODg=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:updated_time" content="2018-04-19T14:14:02.773Z">
+<meta property="og:updated_time" content="2018-05-08T12:39:43.618Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mac上打开破解版应用显示已损坏 + Mac上打开NTFS功能">
-<meta name="twitter:description" content="Mac上打开App显示文件已损坏，应该移除到废纸篓。此问题多见于一些破解应用 解决：1$ sudo spctl --master-disable 然后重新打开应用即可 Mac打开原生NTFS功能1$ diskutil list 1$ sudo vim /etc/fstab 编辑 1LABEL=Win\040Ntfs\040Drive none ntfs rw,auto,nobrowse Win\0">
+<meta name="twitter:description" content="Mac上打开App显示文件已损坏，应该移除到废纸篓。此问题多见于一些破解应用">
 <meta name="twitter:image" content="http://img.blog.csdn.net/20161228101320061?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2FuZ2p1bmxpbmc4ODg=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 
 
@@ -198,6 +199,16 @@
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
             关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
           </a>
         </li>
       
@@ -318,6 +329,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Mac/" itemprop="url" rel="index">
+                    <span itemprop="name">Mac</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -346,7 +379,9 @@
 
       
         <h3 id="Mac上打开App显示文件已损坏，应该移除到废纸篓。"><a href="#Mac上打开App显示文件已损坏，应该移除到废纸篓。" class="headerlink" title="Mac上打开App显示文件已损坏，应该移除到废纸篓。"></a>Mac上打开App显示文件已损坏，应该移除到废纸篓。</h3><p>此问题多见于一些破解应用</p>
-<h4 id="解决："><a href="#解决：" class="headerlink" title="解决："></a>解决：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo spctl --master-disable</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<p>解决：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo spctl --master-disable</span><br></pre></td></tr></table></figure>
 <p>然后重新打开应用即可</p>
 <h3 id="Mac打开原生NTFS功能"><a href="#Mac打开原生NTFS功能" class="headerlink" title="Mac打开原生NTFS功能"></a>Mac打开原生NTFS功能</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ diskutil list</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo vim /etc/fstab</span><br></pre></td></tr></table></figure>
@@ -356,7 +391,7 @@
 <p><img src="http://img.blog.csdn.net/20161228101320061?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2FuZ2p1bmxpbmc4ODg=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast"></p>
 <p>然后</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ln -s /Volumes ~/Desktop/Volumes</span><br></pre></td></tr></table></figure>
-<p>###参考<br><a href="https://www.waitsun.com/aboutus/help" target="_blank" rel="noopener">爱情守望者</a></p>
+<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p><a href="https://www.waitsun.com/aboutus/help" target="_blank" rel="noopener">爱情守望者</a></p>
 
       
     </div>
@@ -371,6 +406,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/疑难杂症/" rel="tag"># 疑难杂症</a>
+          
+        </div>
       
 
       
@@ -470,14 +511,32 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
             
 
           </nav>
@@ -507,7 +566,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Mac上打开App显示文件已损坏，应该移除到废纸篓。"><span class="nav-number">1.</span> <span class="nav-text">Mac上打开App显示文件已损坏，应该移除到废纸篓。</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#解决："><span class="nav-number">1.1.</span> <span class="nav-text">解决：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Mac打开原生NTFS功能"><span class="nav-number">2.</span> <span class="nav-text">Mac打开原生NTFS功能</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Mac上打开App显示文件已损坏，应该移除到废纸篓。"><span class="nav-number">1.</span> <span class="nav-text">Mac上打开App显示文件已损坏，应该移除到废纸篓。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Mac打开原生NTFS功能"><span class="nav-number">2.</span> <span class="nav-text">Mac打开原生NTFS功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考"><span class="nav-number">3.</span> <span class="nav-text">参考</span></a></li></ol></div>
             
 
           </div>

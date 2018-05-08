@@ -197,6 +197,16 @@
         </li>
       
         
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
@@ -273,6 +283,293 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/08/swift-cornerRadius/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/08/swift-cornerRadius/" itemprop="url">Swift---设置view的部分角为圆角</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-08T20:22:05+08:00">
+                2018-05-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/iOS/" itemprop="url" rel="index">
+                    <span itemprop="name">iOS</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">	let myView = UIView()</span><br><span class="line">	</span><br><span class="line">//UIBezierPath的构造函数参数</span><br><span class="line"></span><br><span class="line">	let maskPath = UIBezierPath(roundedRect: myView.bounds, byRoundingCorners: [UIRectCorner.topRight, UIRectCorner.topLeft], cornerRadii: CGSize(width: 8, height: 8))</span><br><span class="line"></span><br><span class="line">      let maskLayer = CAShapeLayer()</span><br><span class="line"></span><br><span class="line">      maskLayer.frame = myView.bounds</span><br><span class="line"></span><br><span class="line">      maskLayer.path = maskPath.cgPath</span><br><span class="line"></span><br><span class="line">      myView.layer.mask = maskLayer</span><br><span class="line"></span><br><span class="line">      view.addSubview(myView)</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/21/hexo-use/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/21/hexo-use/" itemprop="url">Hexo的一些常用操作</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-21T11:05:38+08:00">
+                2018-04-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">Hexo</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h3 id="Write类"><a href="#Write类" class="headerlink" title="Write类"></a>Write类</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cd /hexo目录          //须在hexo目录下执行命令</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/04/21/hexo-use/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/19/Mac-iterm-commond/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -315,6 +612,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Mac/" itemprop="url" rel="index">
+                    <span itemprop="name">Mac</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -343,14 +662,14 @@
 
       
         
-          
-            <h3 id="显示、隐藏-文件"><a href="#显示、隐藏-文件" class="headerlink" title="显示、隐藏  .文件"></a>显示、隐藏  .文件</h3><h4 id="显示"><a href="#显示" class="headerlink" title="显示"></a>显示</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ defaults write com.apple.finder AppleShowAllFiles -bool true</span><br></pre></td></tr></table></figure>
-<p>或者<br><br><br>Command+Shift+. </p>
-<h4 id="隐藏"><a href="#隐藏" class="headerlink" title="隐藏"></a>隐藏</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ defaults write com.apple.finder AppleShowAllFiles -bool false</span><br></pre></td></tr></table></figure>
-<p>或者再次</p>
-<p>Command+Shift+. </p>
-
-          
+          <h3 id="显示、隐藏-文件"><a href="#显示、隐藏-文件" class="headerlink" title="显示、隐藏  .文件"></a>显示、隐藏  .文件</h3>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/04/19/Mac-iterm-commond/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -439,6 +758,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Mac/" itemprop="url" rel="index">
+                    <span itemprop="name">Mac</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -467,21 +808,14 @@
 
       
         
-          
-            <h3 id="Mac上打开App显示文件已损坏，应该移除到废纸篓。"><a href="#Mac上打开App显示文件已损坏，应该移除到废纸篓。" class="headerlink" title="Mac上打开App显示文件已损坏，应该移除到废纸篓。"></a>Mac上打开App显示文件已损坏，应该移除到废纸篓。</h3><p>此问题多见于一些破解应用</p>
-<h4 id="解决："><a href="#解决：" class="headerlink" title="解决："></a>解决：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo spctl --master-disable</span><br></pre></td></tr></table></figure>
-<p>然后重新打开应用即可</p>
-<h3 id="Mac打开原生NTFS功能"><a href="#Mac打开原生NTFS功能" class="headerlink" title="Mac打开原生NTFS功能"></a>Mac打开原生NTFS功能</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ diskutil list</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo vim /etc/fstab</span><br></pre></td></tr></table></figure>
-<p>编辑</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LABEL=Win\040Ntfs\040Drive none ntfs rw,auto,nobrowse</span><br></pre></td></tr></table></figure>
-<p>Win\040Ntfs\040Drive 这串字符中\040代表空格，Win\040Ntfs\040Drive 这一串出现在diskutil list那个屏幕里面，比如下图就是HD-E1</p>
-<p><img src="http://img.blog.csdn.net/20161228101320061?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2FuZ2p1bmxpbmc4ODg=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast"></p>
-<p>然后</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ln -s /Volumes ~/Desktop/Volumes</span><br></pre></td></tr></table></figure>
-<p>###参考<br><a href="https://www.waitsun.com/aboutus/help" target="_blank" rel="noopener">爱情守望者</a></p>
-
-          
+          <h3 id="Mac上打开App显示文件已损坏，应该移除到废纸篓。"><a href="#Mac上打开App显示文件已损坏，应该移除到废纸篓。" class="headerlink" title="Mac上打开App显示文件已损坏，应该移除到废纸篓。"></a>Mac上打开App显示文件已损坏，应该移除到废纸篓。</h3><p>此问题多见于一些破解应用</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/04/19/Mac-command/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -570,6 +904,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/MacDown/" itemprop="url" rel="index">
+                    <span itemprop="name">MacDown</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -598,11 +954,14 @@
 
       
         
-          
-            <h3 id="教程地址"><a href="#教程地址" class="headerlink" title="教程地址"></a><a href="http://xianbai.me/learn-md/" target="_blank" rel="noopener">教程地址</a></h3><h4 id="换行"><a href="#换行" class="headerlink" title="换行"></a>换行<br></h4><p>在需要换行的地方加\<br><br><br>连续敲两个换行</p>
-<p>或者在前一行的末尾加至少两个空格<br>再敲换行</p>
-<h4 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h4><h1 id="H1"><a href="#H1" class="headerlink" title="# H1"></a># H1</h1><h2 id="H2"><a href="#H2" class="headerlink" title="##  H2"></a>##  H2</h2><h3 id="H3"><a href="#H3" class="headerlink" title="### H3"></a>### H3</h3><h4 id="H4"><a href="#H4" class="headerlink" title="#### H4"></a>#### H4</h4><h5 id="H5"><a href="#H5" class="headerlink" title="##### H5"></a>##### H5</h5><h6 id="H6"><a href="#H6" class="headerlink" title="######H6"></a>######H6</h6>
-          
+          <h3 id="教程地址"><a href="#教程地址" class="headerlink" title="教程地址"></a><a href="http://xianbai.me/learn-md/" target="_blank" rel="noopener">教程地址</a></h3>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/04/16/macdown-grammar/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -691,6 +1050,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Cocoapods/" itemprop="url" rel="index">
+                    <span itemprop="name">Cocoapods</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -719,31 +1100,14 @@
 
       
         
-          
-            <h3 id="Mac系统升级到High-Sierra（10-13-4）之后Cocoapods报错"><a href="#Mac系统升级到High-Sierra（10-13-4）之后Cocoapods报错" class="headerlink" title="Mac系统升级到High Sierra（10.13.4）之后Cocoapods报错"></a>Mac系统升级到High Sierra（10.13.4）之后Cocoapods报错</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ pod setup</span><br><span class="line">zsh: /usr/local/bin/pod: bad interpreter: /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/bin: no such file or directory</span><br></pre></td></tr></table></figure>
-<p>原因：</p>
-<p>旧的系统自带的是Ruby2.0，High Sierra的Ruby是2.3的，因此执行pod命令时会找不到Ruby解释器。</p>
-<p>解决：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo gem install cocoapods</span><br></pre></td></tr></table></figure>
-<p>然后</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ pod setup</span><br></pre></td></tr></table></figure>
-<p>更新本地Cocoapods库</p>
-<p>此时执行pod install 命令时，又报错：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Re-creating CocoaPods due to major version update.</span><br><span class="line">Analyzing dependencies</span><br><span class="line">[!] The dependency `SVProgressHUD` is not used in any concrete target.</span><br><span class="line">The dependency `MJRefresh` is not used in any concrete target.</span><br><span class="line">The dependency `SDWebImage ` is not used in any concrete target.</span><br></pre></td></tr></table></figure>
-<p>原因：<br>Cocoapods升级到最新版本之后，podfile格式需要变化。</p>
-<p>解决：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">platform:ios, &apos;8.0&apos;</span><br><span class="line">pod &apos;SVProgressHUD&apos;, &apos;~&gt; 2.0.3&apos;</span><br><span class="line">pod &apos;MJRefresh&apos;, &apos;~&gt; 3.1.0&apos;</span><br><span class="line">pod &apos;SDWebImage&apos;, &apos;~&gt; 3.7.6&apos;</span><br></pre></td></tr></table></figure>
-<p>改为：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">platform:ios, &apos;8.0&apos;</span><br><span class="line"></span><br><span class="line">target ‘当前工程名’ do</span><br><span class="line"></span><br><span class="line">pod &apos;SVProgressHUD&apos;, &apos;~&gt; 2.0.3&apos;</span><br><span class="line">pod &apos;MJRefresh&apos;, &apos;~&gt; 3.1.0&apos;</span><br><span class="line">pod &apos;SDWebImage&apos;, &apos;~&gt; 3.7.6&apos;</span><br><span class="line"></span><br><span class="line">end</span><br></pre></td></tr></table></figure>
-<p>即添加</p>
-<p>target ‘当前工程名’ do  </p>
-<p>并在结尾加上  </p>
-<p>end</p>
-<p>当你下载了个一个网上的开源项目，pod install 时，会长时间无反应，这是因为执行这条命令时，本地Cocoapods会先更新本地库。所以应该改为：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pod install --verbose --no-repo-update</span><br></pre></td></tr></table></figure>
-<h4 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h4><p><a href="https://tomisacat.xyz/tech/2017/09/26/macos-high-sierra-with-cocoapods.html" target="_blank" rel="noopener">升级 macOS High Sierra 后与 Cocoapods 的兼容问题</a></p>
-
-          
+          <h3 id="Mac系统升级到High-Sierra（10-13-4）之后Cocoapods报错"><a href="#Mac系统升级到High-Sierra（10-13-4）之后Cocoapods报错" class="headerlink" title="Mac系统升级到High Sierra（10.13.4）之后Cocoapods报错"></a>Mac系统升级到High Sierra（10.13.4）之后Cocoapods报错</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ pod setup</span><br><span class="line">zsh: /usr/local/bin/pod: bad interpreter: /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/bin: no such file or directory</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/04/15/Cocoapods-bug/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -832,6 +1196,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">Hexo</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -860,11 +1246,14 @@
 
       
         
-          
-            <h3 id="小马哥博客搭建教程"><a href="#小马哥博客搭建教程" class="headerlink" title="小马哥博客搭建教程"></a><a href="https://madongqiang2201.github.io/2016/07/21/Mac%E4%B8%8BHexo%EF%BC%8Bgithub-pages%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/" target="_blank" rel="noopener">小马哥博客搭建教程</a></h3><h3 id="与佳期的个人博客"><a href="#与佳期的个人博客" class="headerlink" title="与佳期的个人博客"></a><a href="http://gonghonglou.com/2016/02/03/firstblog/" target="_blank" rel="noopener">与佳期的个人博客</a></h3><h4 id="坑："><a href="#坑：" class="headerlink" title="坑："></a>坑：</h4><p>新建repository的时候，名字必须是username.github.io，不可随意命名。</p>
-<p>本地修改后如果看不到效果   请清除本地缓存</p>
-
-          
+          <h3 id="小马哥博客搭建教程"><a href="#小马哥博客搭建教程" class="headerlink" title="小马哥博客搭建教程"></a><a href="https://madongqiang2201.github.io/2016/07/21/Mac%E4%B8%8BHexo%EF%BC%8Bgithub-pages%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/" target="_blank" rel="noopener">小马哥博客搭建教程</a></h3><h3 id="与佳期的个人博客"><a href="#与佳期的个人博客" class="headerlink" title="与佳期的个人博客"></a><a href="http://gonghonglou.com/2016/02/03/firstblog/" target="_blank" rel="noopener">与佳期的个人博客</a></h3>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/04/13/test-blog/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -953,6 +1342,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">Hexo</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -981,18 +1392,15 @@
 
       
         
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
+          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/04/13/hello-world/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1072,14 +1480,32 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
             
 
           </nav>
